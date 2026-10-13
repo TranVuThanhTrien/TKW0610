@@ -1,0 +1,6 @@
+body{font-family:Times New Roman,serif;margin:30px}
+.reg{border:1px solid #999;padding:10px;font-size:14px}
+.reg th{color:#006600;font-size:18px;padding-bottom:8px}
+.reg .lb{text-align:right;color:#006600;white-space:nowrap}
+.err{color:red;font-size:13px}
+#ketqua{margin-top:10px;font-weight:bold}

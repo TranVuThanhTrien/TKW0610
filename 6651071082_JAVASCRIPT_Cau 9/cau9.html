@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Câu 9: jQuery form đăng ký có kiểm tra dữ liệu</title>
+<link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+<form id="regForm" novalidate>
+<table class="reg" cellspacing="4">
+<tr><th colspan="3">Personal Information</th></tr>
+<tr><td class="lb">Enter name*:</td>
+    <td><input type="text" id="name" size="28"></td>
+    <td><span class="err" id="err-name"></span></td></tr>
+<tr><td class="lb">Sex*:</td>
+    <td><label><input type="radio" name="sex" value="Male"> Male</label>
+        <label><input type="radio" name="sex" value="Female"> Female</label></td>
+    <td><span class="err" id="err-sex"></span></td></tr>
+<tr><td class="lb">Enter email address*:</td>
+    <td><input type="text" id="email" size="28"></td>
+    <td><span class="err" id="err-email"></span></td></tr>
+<tr><td class="lb">Enter birthday (MM/DD/YYYY)*:</td>
+    <td><input type="text" id="birthday" size="14"></td>
+    <td><span class="err" id="err-birthday"></span></td></tr>
+<tr><td class="lb">Enter street address (line 1)*:</td>
+    <td><input type="text" id="street" size="28"></td>
+    <td><span class="err" id="err-street"></span></td></tr>
+<tr><td class="lb">Enter city*:</td>
+    <td><input type="text" id="city" size="18"></td>
+    <td><span class="err" id="err-city"></span></td></tr>
+<tr><td class="lb">Select a region*:</td>
+    <td><select id="region">
+      <option value="">-- Chọn --</option>
+      <option>Hà Nội</option>
+      <option>TP. Hồ Chí Minh</option>
+      <option>Đà Nẵng</option>
+      <option>Hải Phòng</option>
+      <option>Cần Thơ</option>
+    </select></td>
+    <td><span class="err" id="err-region"></span></td></tr>
+<tr><td class="lb">Enter 5-digit ZIP code*:</td>
+    <td><input type="text" id="zip" size="8" maxlength="10"></td>
+    <td><span class="err" id="err-zip"></span></td></tr>
+<tr><td></td>
+    <td><input type="button" id="btnFinish" value="Finished">
+        <input type="button" id="btnClear" value="Clear"></td>
+    <td></td></tr>
+</table>
+<div id="ketqua"></div>
+</form>
+<script src="Scripts/jquery.min.js"></script>
+<script src="Scripts/cau9.js"></script>
+</body>
+</html>
